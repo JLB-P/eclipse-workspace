@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/josel/ontologies/2023/6/university/"
+     xml:base="http://www.semanticweb.org/josel/ontologies/2023/6/university/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:university="http://www.semanticweb.org/josel/ontologies/2023/6/university#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#CS101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#CS103 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#CS103">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#CSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer"/>
+        <university:teaches rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#CS103"/>
+        <university:teaches rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#M201"/>
+        <university:first_name>Larisa</university:first_name>
+        <university:last_name>Soldatova</university:last_name>
+        <university:staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">417686</university:staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#M201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#M204">
+        <rdf:type rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student1">
+        <university:studies rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#CS101"/>
+        <university:studies rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#M201"/>
+        <university:studies rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#M204"/>
+        <university:first_name>Josef</university:first_name>
+        <university:last_name>Baker</university:last_name>
+        <university:studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">266814</university:studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student2">
+        <university:studies rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#M204"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/josel/ontologies/2023/6/university#Student3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student3">
+        <university:studies rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#CS103"/>
+        <university:studies rdf:resource="http://www.semanticweb.org/josel/ontologies/2023/6/university#M201"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/josel/ontologies/2023/6/university#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

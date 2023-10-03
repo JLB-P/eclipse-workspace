@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"ContinuousGlucoseMonitoring"},{"p":"<Unnamed>","l":"DataProcessing"},{"p":"<Unnamed>","l":"DatasetsToKnowledgeGraph"},{"p":"<Unnamed>","l":"InsulineAdministration"},{"p":"<Unnamed>","l":"Patient"},{"p":"<Unnamed>","l":"PatientRecord"}];updateSearchResults();
